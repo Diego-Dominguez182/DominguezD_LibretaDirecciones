@@ -36,6 +36,7 @@ public class AddressBook {
     /**
      * Carga las entradas de direcciones desde un archivo.
      * @param archivo Nombre del archivo que contiene las entradas de direcciones.
+     * @param entry Entrada de direcciones a agregar.
      */
     public void agregarEntry(AddressEntry entry) {
         entries.add(entry);
@@ -66,7 +67,7 @@ public class AddressBook {
     /**
      * Busca una entrada de direcciones por apellido.
      * @param apellido Apellido de la entrada de direcciones a buscar.
-     * @return La entrada de direcciones encontrada, o null si no se encontró.
+     * @return La entrada de direcciones encontrada, o null si no se encontró
      */
     public void cargarDesdeArchivo(String archivo) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
